@@ -12,9 +12,9 @@ public class Main {
         userService.saveUser("Абдул", "Ахмедов", (byte) 21);
         userService.saveUser("Ахмедхан", "Ахмедханов", (byte) 23);
         userService.saveUser("Амир", "Сердеров", (byte) 19);
+        System.out.println(userService.getAllUsers());
         userService.cleanUsersTable();
         userService.dropUsersTable();
-        Util.closeConnection();
         Util.closeSessionFactory();
 
     }
